@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/tlias
+    username: root
+    password: root
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 100MB
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+aliyun:
+  oss:
+#    endpoint:
+#    accessKeyId:
+#    accessKeySecret:
+#    bucketName:
+
+#spring 事务管理
+logging:
+  level:
+    org.springframework.jdbc.support.JdbcTransactionManager: debug
